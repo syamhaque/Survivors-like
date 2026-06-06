@@ -1,0 +1,6 @@
+.claude
+*.code-workspace
+plans
+node_modules
+dist
+.DS_Store

@@ -1,0 +1,58 @@
+export const ACHIEVEMENTS = [
+  {
+    id: 'survivor',
+    name: 'Survivor',
+    description: 'Reach the 30-minute mark on any map.',
+    icon: '⏱️',
+    check: (stats) => stats.timeReached >= 30 * 60 * 1000,
+  },
+  {
+    id: 'maximalist',
+    name: 'Maximalist',
+    description: 'Reach level 80 in a single run.',
+    icon: '⭐',
+    check: (stats) => stats.maxLevel >= 80,
+  },
+  {
+    id: 'alchemist',
+    name: 'Alchemist',
+    description: 'Evolve any weapon.',
+    icon: '⚗️',
+    check: (stats) => stats.evolutionsObtained >= 1,
+  },
+  {
+    id: 'full_arsenal',
+    name: 'Full Arsenal',
+    description: 'Hold 6 weapons simultaneously.',
+    icon: '⚔️',
+    check: (stats) => stats.maxWeaponsHeld >= 6,
+  },
+  {
+    id: 'exterminator',
+    name: 'Exterminator',
+    description: 'Kill 5000 enemies in a single run.',
+    icon: '💀',
+    check: (stats) => stats.killCount >= 5000,
+  },
+  {
+    id: 'treasure_hunter',
+    name: 'Treasure Hunter',
+    description: 'Open 10 treasure chests in a single run.',
+    icon: '💎',
+    check: (stats) => stats.chestsOpened >= 10,
+  },
+  {
+    id: 'well_fed',
+    name: 'Well Fed',
+    description: 'Collect 20 chickens in a single run.',
+    icon: '🍗',
+    check: (stats) => stats.chickensEaten >= 20,
+  },
+  {
+    id: 'grandmaster_alchemist',
+    name: 'Grand Alchemist',
+    description: 'Obtain all 5 weapon evolutions in a single run.',
+    icon: '🏆',
+    check: (stats) => stats.evolutionsObtained >= 5,
+  },
+];
